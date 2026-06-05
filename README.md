@@ -14,20 +14,11 @@ The data cleansing process followed a structured 4-phase approach: Assess, Clean
 📊<a href="Carbon-Capture Dashboard.pdf" target="_blank" class="btn btn-secondary">View Dashboard</a>
 
 # Dataset Description
-The data comprises seven columns capturing CO₂ capture and recovery performance across experimental runs, cycles, and efficiency metrics, totaling 363,330 records.
+The data comprises seven columns capturing daily each day. For instance, Number of Customer, Average_Order_Value, Operating_Hours_Per_Day, Number_of_Employees, Marketing_Spend_Per_Day, Location_Foot_Traffic, Daily_Revenue. From .csv file in tabular form and 2,000 records.
 
 ## Tables
-* CO₂ Capture & Recovery: Main fact table with raw experimental data (CO₂ capture in kg, CO₂ recovery in kg, run number).
-* CO₂ Capture Cumulatives: Aggregated table tracking cumulative CO₂ captured over time (cumulative value in kg).
-*	CO₂ Recovery Cumulatives: Aggregated table tracking cumulative CO₂ recovered over time (cumulative value in kg).
-* CO₂ Capture Efficiency: Measure table for capture efficiency calculations (percentage).
-* CO₂ Recovery Efficiency: Measure table for recovery efficiency calculations (percentage).
-* CO₂ Capture Efficiency (by Cycle): Helper table for cycle-level efficiency breakdown (% captured, cycle number).
-* CO₂ Capture Recovery (by Cycle): Helper table for cycle-level recovery breakdown (% recovery, cycle number).
 
-  
-<img width="1777" height="735" alt="Data-Model-CCUS" src="https://github.com/user-attachments/assets/ab8708f5-6d8d-43a4-8714-6864b9524781" />
-
+<img width="1299" height="705" alt="image" src="https://github.com/user-attachments/assets/a312de95-3153-44d8-ad84-973038169fdd" />
 
 
 # Executive Summary
