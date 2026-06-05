@@ -1,5 +1,5 @@
 # Coffee-Shop-Daily-Revenue-Prediction
-Comprehensive analysis of 2,000 daily revenue records from a coffee shop operation from Kaggle(<a href="https://www.kaggle.com/datasets/himelsarder/coffee-shop-daily-revenue-prediction-dataset?resource=download" target="_blank" class="btn btn-secondary">Coffee Shop Daily Revenue Prediction Dataset</a>). Using Cluade Cowork End-to-End Data Analysis & Predictive Modeling. The objective was to identify the key factors driving daily revenue such as Number of Customers Per Day, Average Order Value, Marketing Spend Per Day, etc. and build a predictive model to support strategic decision-making. 
+Comprehensive analysis of 2,000 daily revenue records from a coffee shop operation from Kaggle(<a href="https://www.kaggle.com/datasets/himelsarder/coffee-shop-daily-revenue-prediction-dataset?resource=download" target="_blank" class="btn btn-secondary">Coffee Shop Daily Revenue Prediction Dataset</a>). Using Cluade Cowork End-to-End Data Analysis & Predictive Modeling (Python 3.10 with pandas, NumPy, SciPy, scikit-learn, statsmodels, Matplotlib and Seaborn for visualization, Scikit-learn for model training and evaluation (Linear Regression, Random Forest, Gradient Boosting). The objective was to identify the key factors driving daily revenue such as Number of Customers Per Day, Average Order Value, Marketing Spend Per Day, etc. and build a predictive model to support strategic decision-making. 
 
 Insights and recommendations are provided on the following key areas:
 
@@ -14,7 +14,7 @@ The data cleansing process followed a structured 4-phase approach: Assess, Clean
 📊<a href="Carbon-Capture Dashboard.pdf" target="_blank" class="btn btn-secondary">View Dashboard</a>
 
 # Dataset Description
-The data model comprises six tables capturing CO₂ capture and recovery performance across experimental runs, cycles, and efficiency metrics, totaling 363,330 records.
+The data comprises seven columns capturing CO₂ capture and recovery performance across experimental runs, cycles, and efficiency metrics, totaling 363,330 records.
 
 ## Tables
 * CO₂ Capture & Recovery: Main fact table with raw experimental data (CO₂ capture in kg, CO₂ recovery in kg, run number).
