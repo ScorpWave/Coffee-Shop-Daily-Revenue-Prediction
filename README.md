@@ -62,15 +62,15 @@ Average Order Value is the second strongest driver (36.2% importance). Each $1 i
 # Recommendations
 Based on these insights, the following recommendations are put forth:
 
-•	Focus on increasing customer footfall — each additional customer adds ~$5.54 to daily revenue
-•	Implement upselling strategies to raise Average Order Value — each $1 increase adds ~$243 daily
-•	Maintain marketing spend as it shows positive ROI ($1.52 return per $1 spent)
-•	Operating hours optimization is NOT a revenue lever — consider reducing to cut costs
-•	Staffing levels do not significantly impact revenue — optimize for service quality instead
-•	Location foot traffic alone does not drive sales — conversion rate matters more than walk-bys
+*	Focus on increasing customer footfall — each additional customer adds ~$5.54 to daily revenue
+*	Implement upselling strategies to raise Average Order Value — each $1 increase adds ~$243 daily
+*	Maintain marketing spend as it shows positive ROI ($1.52 return per $1 spent)
+*	Operating hours optimization is NOT a revenue lever — consider reducing to cut costs
+*	Staffing levels do not significantly impact revenue — optimize for service quality instead
+*	Location foot traffic alone does not drive sales — conversion rate matters more than walk-bys
 
 # Assumptions
 
-•	Data completeness and accuracy from the source Kaggle provider dataset are assumed post-cleaning.
-•	All Key Performance Indicators (KPIs) and measures are calculated based solely on the provided dataset without external imputation.
+*	Data completeness and accuracy from the source Kaggle provider dataset are assumed post-cleaning.
+*	All Key Performance Indicators (KPIs) and measures are calculated based solely on the provided dataset without external imputation.
 
