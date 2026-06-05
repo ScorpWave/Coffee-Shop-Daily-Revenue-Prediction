@@ -1,5 +1,5 @@
 # Coffee-Shop-Daily-Revenue-Prediction
-Comprehensive analysis of 2,000 daily revenue records from a coffee shop operation. Using Cluade Cowork End-to-End Data Analysis & Predictive Modeling. The objective was to identify the key factors driving daily revenue such as Number of Customers Per Day, Average Order Value, Marketing Spend Per Day, etc. and build a predictive model to support strategic decision-making. 
+Comprehensive analysis of 2,000 daily revenue records from a coffee shop operation from Kaggle(Coffee Shop Daily Revenue Prediction Dataset). Using Cluade Cowork End-to-End Data Analysis & Predictive Modeling. The objective was to identify the key factors driving daily revenue such as Number of Customers Per Day, Average Order Value, Marketing Spend Per Day, etc. and build a predictive model to support strategic decision-making. 
 
 Insights and recommendations are provided on the following key areas:
 
@@ -9,7 +9,7 @@ Category 2: CO₂ Recovery
 
 Category 3: Capture vs. Recovery Gap 
 
-The dataset was cleaned, aggregated, and analyzed in Excel, and Power Query before being visualized in Power BI.
+The data cleansing process followed a structured 4-phase approach: Assess, Clean, Validate, and Document. Each phase is detailed below with specific actions taken and their rationale.
 
 📊<a href="Carbon-Capture Dashboard.pdf" target="_blank" class="btn btn-secondary">View Dashboard</a>
 
