@@ -11,7 +11,7 @@ Category 3: Average Order Value
 
 The data cleansing process followed a structured 4-phase approach: Assess, Clean, Validate, and Document. Each phase is detailed below with specific actions taken and their rationale.
 
-📊<a href="" target="_blank" class="btn btn-secondary">View Dashboard</a>
+📊<a href="https://coffeeshopdailyrevenueproduciton.netlify.app/" target="_blank" class="btn btn-secondary">View Dashboard</a>
 
 # Dataset Description
 The data comprises seven columns capturing daily each day. For instance, Number of Customer, Average_Order_Value, Operating_Hours_Per_Day, Number_of_Employees, Marketing_Spend_Per_Day, Location_Foot_Traffic, Daily_Revenue. From .csv file in tabular form and 2,000 records.
