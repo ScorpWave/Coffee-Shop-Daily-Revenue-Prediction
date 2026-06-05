@@ -1,5 +1,5 @@
 # Coffee-Shop-Daily-Revenue-Prediction
-Comprehensive analysis of 2,000 daily revenue records from a coffee shop operation from Kaggle(Coffee Shop Daily Revenue Prediction Dataset). Using Cluade Cowork End-to-End Data Analysis & Predictive Modeling. The objective was to identify the key factors driving daily revenue such as Number of Customers Per Day, Average Order Value, Marketing Spend Per Day, etc. and build a predictive model to support strategic decision-making. 
+Comprehensive analysis of 2,000 daily revenue records from a coffee shop operation from Kaggle(<a href="https://www.kaggle.com/datasets/himelsarder/coffee-shop-daily-revenue-prediction-dataset?resource=download" target="_blank" class="btn btn-secondary">Coffee Shop Daily Revenue Prediction Dataset</a>). Using Cluade Cowork End-to-End Data Analysis & Predictive Modeling. The objective was to identify the key factors driving daily revenue such as Number of Customers Per Day, Average Order Value, Marketing Spend Per Day, etc. and build a predictive model to support strategic decision-making. 
 
 Insights and recommendations are provided on the following key areas:
 
