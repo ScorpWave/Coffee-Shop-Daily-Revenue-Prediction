@@ -3,11 +3,11 @@ Comprehensive analysis of 2,000 daily revenue records from a coffee shop operati
 
 Insights and recommendations are provided on the following key areas:
 
-Category 1: CO₂ Capture
+Category 1: Daily Revenue
 
-Category 2: CO₂ Recovery
+Category 2: Number of Customers Per Day 
 
-Category 3: Capture vs. Recovery Gap 
+Category 3: Average Order Value
 
 The data cleansing process followed a structured 4-phase approach: Assess, Clean, Validate, and Document. Each phase is detailed below with specific actions taken and their rationale.
 
@@ -23,44 +23,54 @@ The data comprises seven columns capturing daily each day. For instance, Number 
 
 # Executive Summary
 ## Overview of Findings
-Across five experimental runs, the CO₂ capture system demonstrated consistently high capture efficiency but variable recovery performance depending on sorbent generation and configuration. Zeolite-based runs showed significantly lower capture volumes, while Gen 1 sorbent runs dominated total throughput.
+Our analysis reveals that only 2 out of 6 measured factors significantly influence revenue, with customer volume and average order value accounting for over 93% of the predictive power. The best-performing model (Random Forest) achieves 94.9% prediction accuracy.
 
-* Total CO₂ captured across all runs reached 449.80 kg, with Run 1 Gen 1 contributing the highest volume at 173.89 kg.
-*	CO₂ Capture Efficiency averaged 99.54%, indicating near-complete adsorption performance across cycles.
-*	Total CO₂ recovered was 70.54 kg, reflecting an overall Recovery Efficiency of only 41.41%.
-*	Run 3 (Zeolite only) recorded the lowest capture and recovery, suggesting limited sorbent effectiveness under tested conditions.
-*	Significantly detected Gen 2 sorbent inefficiency normally it should be better than Gen 1 and determined it as the root cause of operational issues, and drove cost savings by discontinuing its production.
+*	3 statistically significant revenue drivers: Customer Count (r=0.74), Average Order Value (r=0.54), Marketing Spend (r=0.25)
+*	3 non-significant factors: Operating Hours, Employee Count, Location Foot Traffic
+*	Best predictive model: Random Forest with R² = 0.949 and cross-validated R² = 0.946
+*	Average daily revenue: $1,916 (median: $1,771) across 2,000 observed days
+*	Each additional customer adds $5.54 revenue
+*	Each $1 Average Order Value increase adds $243 daily revenue
+
 
 # Insights 
-## Category 1: CO₂ Capture 
-*	Capture volume varied significantly across runs, ranging from 5.86 kg (Run 3 Zeolite) to 173.89 kg (Run 1 Gen 1).
-*	Runs using Gen 1 sorbent alone or in combination consistently outperformed Zeolite-only configurations.
-*	Run 2 Gen 1 + Gen 2 by half-half capture around 164.26 kg. It should be better than pure Gen 1
-*	The high capture efficiency (~99.54%) across most cycles confirms the adsorption stage is operating effectively.
+## Category 1: Daily Revenue
+The revenue distribution is right-skewed (skewness = 0.61), indicating more low-revenue days than high-revenue days. The mean ($1,916) exceeds the median ($1,771) by $145, confirming this positive skew. The Shapiro-Wilk test rejects normality (p < 0.001), which is one reason non-linear models (Random Forest, Gradient Boosting) outperform linear regression.
 
 
-<img width="575" height="521" alt="CO2 Capture" src="https://github.com/user-attachments/assets/815ac454-f33f-4073-b1b4-95dc212779f5" />
+<img width="975" height="725" alt="image" src="https://github.com/user-attachments/assets/79b3c274-66f4-400a-b272-1e5af3c4d686" />
 
 
-## Category 2: CO₂ Recovery 
-*	Run 3 (Zeolite) recorded the lowest total recovery at 1.16 kg, while Run 2 Gen 1+2 achieved the highest at 20.35 kg.
-*	Recovery efficiency showed high variability across cycles, with values ranging from near 0% to 100% within individual runs.
-*	The scatter pattern in the Recovery Efficiency chart suggests desorption performance is sensitive to cycle conditions and sorbent type.
+
+## Category 2: Number of Customers Per Day 
+Customer count is the strongest revenue driver, contributing 57.2% of predictive importance. Each additional customer adds approximately $5.54 to daily revenue. Recommended actions include loyalty programs, local partnerships, social media marketing, and optimizing store visibility. This is a high-impact, medium-effort initiative that should be prioritized immediately.
 
 
-<img width="707" height="521" alt="CO2 Recovery" src="https://github.com/user-attachments/assets/c49157a8-d053-4c9d-946a-da6fcd136f67" />
+<img width="975" height="725" alt="image" src="https://github.com/user-attachments/assets/e84b982d-2457-4d88-92a0-6441503665ec" />
 
 
-## Category 3: Capture vs. Recovery Gap
-*	A significant gap exists between capture (449.80 kg) and recovery (70.54 kg), indicating that while CO₂ is effectively adsorbed, a large portion is not successfully desorbed and collected.
-*	Optimizing the desorption phase particularly may be key to improving overall system efficiency.
+
+## Category 3: Average Order Value
+Average Order Value is the second strongest driver (36.2% importance). Each $1 increase in AOV adds approximately $243 to daily revenue, making this the highest-leverage per-unit action. Recommended tactics include premium product offerings, combo deals, add-on suggestions at point of sale, and seasonal specialty drinks. This is high-impact and low-effort — implement immediately.
 
 
-<img width="642" height="132" alt="Total CO2 Capture vs CO2 Recovery" src="https://github.com/user-attachments/assets/abf38b09-6078-4da2-b07d-4927f31f3277" />
+<img width="975" height="736" alt="image" src="https://github.com/user-attachments/assets/3fdd4256-e211-426d-8794-f0afb4239b79" />
+
 
 
 
 # Recommendations
-*	Desorption Optimization: Given the large gap between capture efficiency (99.54%) and recovery efficiency (41.41%), further investigation into the desorption phase is critical. Temperature swing parameters and heating duration should be systematically varied to improve CO₂ release from the sorbent bed.
-*	Scaling for Higher Throughput: Run 1 and Run 2 demonstrated the highest capture volumes (173.89 kg and 164.26 kg respectively). These configurations should be prioritized as the baseline for scaled-up pilot testing, with attention to maintaining efficiency at larger sorbent bed volumes.
-*	Run Monitoring & Real-Time Diagnostics: Deploy cycle-level monitoring dashboards to detect early signs of sorbent degradation or performance drops, enabling proactive intervention before efficiency losses accumulate across long runs.
+Based on these insights, the following recommendations are put forth:
+
+•	Focus on increasing customer footfall — each additional customer adds ~$5.54 to daily revenue
+•	Implement upselling strategies to raise Average Order Value — each $1 increase adds ~$243 daily
+•	Maintain marketing spend as it shows positive ROI ($1.52 return per $1 spent)
+•	Operating hours optimization is NOT a revenue lever — consider reducing to cut costs
+•	Staffing levels do not significantly impact revenue — optimize for service quality instead
+•	Location foot traffic alone does not drive sales — conversion rate matters more than walk-bys
+
+# Assumptions
+
+•	Data completeness and accuracy from the source Kaggle provider dataset are assumed post-cleaning.
+•	All Key Performance Indicators (KPIs) and measures are calculated based solely on the provided dataset without external imputation.
+
